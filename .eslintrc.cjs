@@ -1,8 +1,6 @@
 // @ts-check
 const { builtinModules } = require('node:module')
 const { defineConfig } = require('eslint-define-config')
-const pkg = require('./package.json')
-
 /// <reference types="@eslint-types/typescript-eslint" />
 
 module.exports = defineConfig({
@@ -124,6 +122,17 @@ module.exports = defineConfig({
           '__dirname',
           '__filename',
         ],
+      },
+    },
+    {
+      files: ['packages/node-lib/**/*.*'],
+      rules: {
+        'i/no-nodejs-modules': 'off',
+        'i/order': 'off',
+        'no-restricted-globals': 'off',
+        'n/no-missing-require': 'off',
+        '@typescript-eslint/no-this-alias': 'off',
+        '@typescript-eslint/consistent-type-imports': 'off',
       },
     },
     {

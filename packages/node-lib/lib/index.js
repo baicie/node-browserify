@@ -1,0 +1,1 @@
+globalThis.primordials = globalThis.primordials || {}
