@@ -12,7 +12,7 @@ module.exports = defineConfig({
     'plugin:@typescript-eslint/stylistic',
     'plugin:regexp/recommended',
   ],
-  ignorePatterns: [],
+  ignorePatterns: ['deps/', '**/dist', 'node_modules'],
   plugins: ['i', 'regexp'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -133,6 +133,7 @@ module.exports = defineConfig({
         'n/no-missing-require': 'off',
         '@typescript-eslint/no-this-alias': 'off',
         '@typescript-eslint/consistent-type-imports': 'off',
+        'n/no-extraneous-import': 'off',
       },
     },
     {

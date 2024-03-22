@@ -4,3 +4,7 @@ LICENSE.md
 pnpm-lock.yaml
 pnpm-workspace.yaml
 .eslintcache
+.turbo
+deps
+.rollup.cache
+node_modules
