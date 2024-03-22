@@ -5,7 +5,168 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup --config rollup.config.ts --configPlugin typescript"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./assert": {
+      "import": "./dist/assert/strict.js",
+      "require": "./dist/assert/strict.js"
+    },
+    "./buffer": {
+      "import": "./dist/buffer/index.js",
+      "require": "./dist/buffer/index.js"
+    },
+    "./child_process": {
+      "import": "./dist/child_process/index.js",
+      "require": "./dist/child_process/index.js"
+    },
+    "./cluster": {
+      "import": "./dist/cluster/index.js",
+      "require": "./dist/cluster/index.js"
+    },
+    "./console": {
+      "import": "./dist/console/index.js",
+      "require": "./dist/console/index.js"
+    },
+    "./constants": {
+      "import": "./dist/constants/index.js",
+      "require": "./dist/constants/index.js"
+    },
+    "./crypto": {
+      "import": "./dist/crypto/index.js",
+      "require": "./dist/crypto/index.js"
+    },
+    "./dgram": {
+      "import": "./dist/dgram/index.js",
+      "require": "./dist/dgram/index.js"
+    },
+    "./dns": {
+      "import": "./dist/dns/index.js",
+      "require": "./dist/dns/index.js"
+    },
+    "./events": {
+      "import": "./dist/events/index.js",
+      "require": "./dist/events/index.js"
+    },
+    "./fs": {
+      "import": "./dist/fs/index.js",
+      "require": "./dist/fs/index.js"
+    },
+    "./http": {
+      "import": "./dist/http/index.js",
+      "require": "./dist/http/index.js"
+    },
+    "./http2": {
+      "import": "./dist/http2/index.js",
+      "require": "./dist/http2/index.js"
+    },
+    "./https": {
+      "import": "./dist/https/index.js",
+      "require": "./dist/https/index.js"
+    },
+    "./module": {
+      "import": "./dist/module/index.js",
+      "require": "./dist/module/index.js"
+    },
+    "./net": {
+      "import": "./dist/net/index.js",
+      "require": "./dist/net/index.js"
+    },
+    "./os": {
+      "import": "./dist/os/index.js",
+      "require": "./dist/os/index.js"
+    },
+    "./path": {
+      "import": "./dist/path/index.js",
+      "require": "./dist/path/index.js"
+    },
+    "./perf_hooks": {
+      "import": "./dist/perf_hooks/index.js",
+      "require": "./dist/perf_hooks/index.js"
+    },
+    "./process": {
+      "import": "./dist/process/index.js",
+      "require": "./dist/process/index.js"
+    },
+    "./punycode": {
+      "import": "./dist/punycode/index.js",
+      "require": "./dist/punycode/index.js"
+    },
+    "./querystring": {
+      "import": "./dist/querystring/index.js",
+      "require": "./dist/querystring/index.js"
+    },
+    "./readline": {
+      "import": "./dist/readline/index.js",
+      "require": "./dist/readline/index.js"
+    },
+    "./repl": {
+      "import": "./dist/repl/index.js",
+      "require": "./dist/repl/index.js"
+    },
+    "./stream": {
+      "import": "./dist/stream/index.js",
+      "require": "./dist/stream/index.js"
+    },
+    "./string_decoder": {
+      "import": "./dist/string_decoder/index.js",
+      "require": "./dist/string_decoder/index.js"
+    },
+    "./timers": {
+      "import": "./dist/timers/index.js",
+      "require": "./dist/timers/index.js"
+    },
+    "./tls": {
+      "import": "./dist/tls/index.js",
+      "require": "./dist/tls/index.js"
+    },
+    "./trace_events": {
+      "import": "./dist/trace_events/index.js",
+      "require": "./dist/trace_events/index.js"
+    },
+    "./tty": {
+      "import": "./dist/tty/index.js",
+      "require": "./dist/tty/index.js"
+    },
+    "./url": {
+      "import": "./dist/url/index.js",
+      "require": "./dist/url/index.js"
+    },
+    "./util": {
+      "import": "./dist/util/index.js",
+      "require": "./dist/util/index.js"
+    },
+    "./v8": {
+      "import": "./dist/v8/index.js",
+      "require": "./dist/v8/index.js"
+    },
+    "./vm": {
+      "import": "./dist/vm/index.js",
+      "require": "./dist/vm/index.js"
+    },
+    "./worker_threads": {
+      "import": "./dist/worker_threads/index.js",
+      "require": "./dist/worker_threads/index.js"
+    },
+    "./zlib": {
+      "import": "./dist/zlib/index.js",
+      "require": "./dist/zlib/index.js"
+    },
+    "./errors": {
+      "import": "./dist/errors/index.js",
+      "require": "./dist/errors/index.js"
+    },
+    "./globals": {
+      "import": "./dist/globals/index.js",
+      "require": "./dist/globals/index.js"
+    }
   },
   "keywords": [],
   "author": "",
